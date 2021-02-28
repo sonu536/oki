@@ -74,7 +74,7 @@ function onPlayerReady() {
 
 function onPlayerError(e) {
     player.stopVideo();
-    $(".cov").css("background-image", "url('/sp-vsl-1/images/video-cover.png?v2");
+    $(".cov").css("background-image", "url('/video-cover.png?v2");
     $(".cov").show();
     $("#loadingVideo").hide();
     $("#cfs").hide();
@@ -97,7 +97,7 @@ function onPlayerStateChange(e) {
     if (e.data === 1) {
         $("#loadingVideo").hide();
         $(".cov").hide();
-        $(".cov").css("background-image", "url('/sp-vsl-1/images/video-cover.png?v2");
+        $(".cov").css("background-image", "url('/video-cover.png?v2");
         if (muteStatus == 1) {
             $(".unmute").show();
         } else {
@@ -120,7 +120,7 @@ function onPlayerStateChange(e) {
     if (e.data === 0 || e.data === 5) {
         $("#loadingVideo").hide();
         $("#cfs").hide();
-        $(".cov").css("background-image", "url('/sp-vsl-1/images/video-cover.png?v2");
+        $(".cov").css("background-image", "url('/video-cover.png?v2");
         $(".cov").show();
     }
 }
