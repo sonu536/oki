@@ -77,6 +77,26 @@
     height: 100%
 }
 
+.order-now {
+	margin-top: 3%;
+	text-align: center;
+}
+.order-now a {
+	padding: 15px 9%;
+	background-color: #fff;
+	border-radius: 5px;
+	color: #b6252a;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+.order-now a:hover {
+	text-decoration: none;
+}
+.order-now {
+	margin-bottom: 25px;
+	margin-top: 9%;
+}
+
 @media only screen and (max-width:480px)
   {
     
