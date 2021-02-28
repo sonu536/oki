@@ -523,11 +523,14 @@ h3.bottle-duration{
               <div class="cov" style="background-image: url(&quot;/sp-vsl-1/images/video-cover.png?v2&quot;); display: none;"></div>
               <div class="covall"></div>
               <iframe id="player" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" src="https://www.youtube.com/embed/yuMpwNKCGa4?autoplay=1&cc_load_policy=0&controls=0&disablekb=1&fs=0&playsinline=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0&host=https%3A%2F%2Fwww.youtube.com&enablejsapi=1&origin=https%3A%2F%2Fflatbellytonic.com&widgetid=1&mute=1" __idm_id__="590309377" width="640" height="360" frameborder="0"></iframe>
-            <script>document.addEventListener('click', musicPlay);
-function musicPlay() {
-    document.getElementById('ID').play();
-    document.removeEventListener('click', musicPlay);
-}</script>
+            <script>window.addEventListener('load', async () => {
+  let video = document.querySelector('video[muted][autoplay]');
+  try {
+    await video.play();
+  } catch (err) {
+    video.controls = true;
+  }
+});</script>
 	</div>
           </div>
         </div>
