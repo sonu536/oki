@@ -7,7 +7,20 @@ This completely natural method for reducing belly fat is amazing…
 It was first discovered in Japan and it’s super easy for Americans to follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta charset="utf-8">
-
+<script type="text/javascript">
+function bemobCb(params) {
+    var t = params.trackingDomain+'/click/';
+    var re = new RegExp(t+'?(\\d*)');
+    var e = document.querySelectorAll('a[href*="'+t+'"]');
+    for (var i = 0; i < e.length; i++) {
+        var ex = re.exec(e[i].href);
+        if (ex) {
+            e[i].href = params.ctaSecureUrl.replace('%%OFFER_NUMBER%%', ex[1] || 1);
+        }
+    }
+}
+</script>
+<script type="text/javascript">!function(){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src="https://rdr.dailyrewardz.com/landing/ca6d2c60-dbee-4e9e-9508-f272a5bed5ca?callback=bemobCb&rule=1&path=1&landing=1&"+window.location.search.substring(1);var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}();</script><noscript><img src="https://rdr.dailyrewardz.com/landing/ca6d2c60-dbee-4e9e-9508-f272a5bed5ca?rule=1&path=1&landing=1" alt=""></noscript>
 <style>
 .async-hide {
 	opacity: 0 !important
