@@ -23,7 +23,7 @@
 }
 
 #cfs {
-    background-image: url(../images/tap-sound.png?v2);
+    background-image: url(../mobile_files/tap-sound.png?v2);
     background-size: cover;
     z-index: 25;
     display: none;
@@ -31,7 +31,7 @@
 }
 
 .cov {
-    background-image: url(../images/video-cover.png?v2);
+    background-image: url(../mobile_files/video-cover.png?v2);
     background-size: cover;
     z-index: 20!important;
     display: none
