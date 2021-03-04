@@ -73,7 +73,7 @@ function onPlayerReady() {
 
 function onPlayerError(e) {
     player.stopVideo();
-    $(".cov").css("background-image", "url('/sp/m/images/alt-player-continue-2-m.png')");
+    $(".cov").css("background-image", "url('/mobile_files/alt-player-continue-2-m.png')");
     $(".cov").show();
     $("#loadingVideo").hide();
     $("#cfs").hide();
@@ -93,7 +93,7 @@ function onPlayerStateChange(e) {
     if (e.data === 1) {
         $("#loadingVideo").hide();
         $(".cov").hide();
-        $(".cov").css("background-image", "url('/sp/m/images/alt-player-continue-2-m.png')");
+        $(".cov").css("background-image", "url('/mobile_files/alt-player-continue-2-m.png')");
         if (muteStatus == 1) {
             $("#cfs").show();
         } else {
@@ -111,7 +111,7 @@ function onPlayerStateChange(e) {
     if (e.data === 0 || e.data === 5) {
         $("#loadingVideo").hide();
         $("#cfs").hide();
-        $(".cov").css("background-image", "url('/sp/m/images/alt-player-continue-2-m.png')");
+        $(".cov").css("background-image", "url('/mobile_files/alt-player-continue-2-m.png')");
         $(".cov").show();
     }
 }
