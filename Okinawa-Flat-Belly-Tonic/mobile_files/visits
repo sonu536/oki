@@ -1,0 +1,17 @@
+
+      window.addEventListener("beforeunload", function() {
+
+        var url = ''
+
+        if (document.activeElement) {
+          url = document.activeElement.href || ''
+          if (!url && document.activeElement.parentElement) {
+            url = document.activeElement.parentElement.href || ''
+          }
+        }
+
+        var request = new XMLHttpRequest()
+        request.open('GET', '//' + location.hostname + '/api/exits/9742616?url=' + encodeURIComponent(url))
+        request.send()
+      })
+    
